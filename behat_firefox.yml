@@ -1,0 +1,12 @@
+default:
+    extensions:
+        Behat\MinkExtension:
+            goutte: ~
+            selenium2: ~
+            base_url: 'http://fram-dev.local/'
+            files_path: 'files'
+    suites:
+        default:
+            contexts:
+                - FeatureContext
+                - Behat\MinkExtension\Context\MinkContext
